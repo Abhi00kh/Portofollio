@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
+
 import Navbar from './Navbar';
 import './App.css';
 import About from './About';
@@ -10,9 +12,9 @@ import Certifications from './certification';
 import Contact from './contact';
 
 
-function App() {
+export default function App() {
   return (
-    <>
+    <div>
       <Navbar />
       <section id="/">
         {/* Home content */}
@@ -35,14 +37,7 @@ function App() {
       <section>
         <Footer />
       </section>
-      <section hidden id="contact">
-        {/* Contact content */}
-      
-        <Contact/>
-
-      </section>
-    </>
+      <SpeedInsights />
+    </div>
   );
 }
-
-export default App;
