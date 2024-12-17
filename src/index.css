@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    --bg-gradient: linear-gradient(to right, rgb(2 26 47), rgb(68 7 14));
+    --pt: 1.2rem;
+    --pb: 3.75rem;
+    --color: white;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+    background: var(--bg-gradient);
+    padding-top: var(--pt);
+    padding-bottom: var(--pb);
+    color: var(--color);
+    box-shadow: var(--box-shadow);
+  }
