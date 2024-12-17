@@ -83,7 +83,7 @@ export default function Example() {
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl">
+            <h1 className="text-5xl font-semibold tracking-tight text-white sm:text-5xl">
               Hi, I'm ABHIJIT KHULE, A SOFTWARE DEVELOPER
             </h1>
             <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl">
