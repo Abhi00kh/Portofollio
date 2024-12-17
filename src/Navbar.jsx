@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import seaimg from './assets/sea.jpg';
 
 const navigation = [
   { name: 'Home', href: '#home' },
@@ -32,11 +33,21 @@ export default function Example() {
       <header
         className={`${
           isScrolled
-            ? 'fixed top-0 z-50 bg-gradient-to-r from-[#000000] to-[#250339] shadow-lg'
-            : 'absolute bg-gradient-to-r from-[#000000] to-[#250339]'
+            ? 'fixed top-0 z-50 bg-gradient-to-r from-[#000000] to-[#250339] bg-opacity-90 shadow-lg'
+            : 'absolute bg-transparent'
         } inset-x-0 transition-all duration-300`}
       >
         <nav aria-label="Global" className="flex items-center justify-center p-4 lg:justify-between lg:p-6 lg:px-8">
+          <div className="flex lg:flex-1">
+            <a href="#" className="-m-1.5 p-1.5">
+              <span className="sr-only">Portofollio</span>
+              <img
+                alt="Logo"
+                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+                className="h-8 w-auto"
+              />
+            </a>
+          </div>
           <div className="flex gap-x-4 lg:gap-x-12">
             {navigation.map((item) => (
               <a key={item.name} href={item.href} className="text-sm font-semibold text-white">
@@ -72,10 +83,10 @@ export default function Example() {
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+            <h1 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl">
               Hi, I'm ABHIJIT KHULE, A SOFTWARE DEVELOPER
             </h1>
-            <p className="mt-8 text-base font-medium text-gray-500 sm:text-lg">
+            <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl">
               Explore my projects and skills. I specialize in web development, creating responsive and dynamic websites using the latest technologies.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -91,12 +102,6 @@ export default function Example() {
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
               >
                 Resume
-              </a>
-              <a
-                href="#contact"
-                className="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
-              >
-                Get in Touch
               </a>
             </div>
           </div>
